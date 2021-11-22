@@ -8,6 +8,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>The creative crew</h1>
+    <div class="page"></div> <!-- block -->
+      <div class="page__details"> <!-- block element -->
+        <div class="page__heading"></div>
+        <div class="page__desc">
+          <div class="page__title"></div>
+          <div class="page__info"></div>
+        </div>
+      </div>
+      <div class="page__crew"> <!-- block element -->
+        <div class="person person-one">
+          <div class="person__photo"></div>
+          <div class="person__position"></div>
+          <div class="person__name"></div>
+        </div>
+      </div>
+      <div class="page__footer"></div> <!-- block element -->
+    </div>
   </body>
 </html>
+
+<!-- 
+  Why is naming so hard?
+  Going to BEM for help!
+
+  Modifier
+  e.g. --person-one
+  application: page__person--person-one
+
+  “How do you decide what is a block?”
+Any element that is self-containing and can be decomposed. If you can move this anywhere on the page and have it function exactly how it does anywhere else. That is a block. Navigation, content area, side-bar, footer, header, carousel, etc.
+
+https://css-tricks.com/bem-101/
+ -->
