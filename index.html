@@ -8,36 +8,59 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page"></div> <!-- block -->
-      <div class="page__details"> <!-- block element -->
-        <div class="page__heading"></div>
+    <div class="page">
+      <div class="page__details">
+        <h1 class="page__heading">The creative crew</h1>
         <div class="page__desc">
-          <div class="page__title"></div>
-          <div class="page__info"></div>
+          <p class="page__title">Who we are</p>
+          <p class="page__info">We are team of creatively diverse.  driven.  innovative individuals working in various locations from the world.</p>
         </div>
       </div>
-      <div class="page__crew"> <!-- block element -->
+      <div class="page__crew">
         <div class="person person-one">
-          <div class="person__photo"></div>
-          <div class="person__position"></div>
-          <div class="person__name"></div>
+          <div class="person__profile">
+            <img class="person__photo" src="./assets/photo1.png"></img>
+            <p class="person__position">Product owner</p>
+          </div>
+          <p class="person__name">Bill Mahoney</p>
+        </div>
+        <div class="person person-two">
+          <div class="person__profile">
+            <img class="person__photo" src="./assets/photo2.png"></img>
+            <p class="person__position">Art director</p>
+          </div>
+          <p class="person__name">Saba Cabrera</p>
+        </div>
+        <div class="person person-three">
+          <div class="person__profile">
+            <img class="person__photo" src="./assets/photo3.png"></img>
+            <p class="person__position">Tech Lead</p>
+          </div>
+          <p class="person__name">Shae Le</p>
+        </div>
+        <div class="person person-four">
+          <div class="person__profile">
+            <img class="person__photo" src="./assets/photo4.png"></img>
+            <p class="person__position">UX Designer</p>
+          </div>
+          <p class="person__name">Skylah Lu</p>
+        </div>
+        <div class="person person-five">
+          <div class="person__profile">
+            <img class="person__photo" src="./assets/photo5.png"></img>
+            <p class="person__position">Developer</p>
+          </div>
+          <p class="person__name">Griff Richards</p>
+        </div>
+        <div class="person person-six">
+          <div class="person__profile">
+            <img class="person__photo" src="./assets/photo6.png"></img>
+            <p class="person__position">Developer</p>
+          </div>
+          <p class="person__name">Stan John</p>
         </div>
       </div>
-      <div class="page__footer"></div> <!-- block element -->
+      <footer class="page__footer">created by <a target="__blank" href="https://github.com/horsemaker">horsemaker</a> - devChallenges.io</footer>
     </div>
   </body>
 </html>
-
-<!-- 
-  Why is naming so hard?
-  Going to BEM for help!
-
-  Modifier
-  e.g. --person-one
-  application: page__person--person-one
-
-  “How do you decide what is a block?”
-Any element that is self-containing and can be decomposed. If you can move this anywhere on the page and have it function exactly how it does anywhere else. That is a block. Navigation, content area, side-bar, footer, header, carousel, etc.
-
-https://css-tricks.com/bem-101/
- -->
